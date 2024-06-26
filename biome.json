@@ -1,8 +1,11 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
 	"files": {
-		"ignoreUnknown": true,
-		"include": ["src/**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"]
+		"ignore": ["node_modules", "build", "out", "dist", "lib/bs"],
+		"include": [
+			"src/**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}",
+			"playground/src/**/*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+		]
 	},
 	"organizeImports": {
 		"enabled": true

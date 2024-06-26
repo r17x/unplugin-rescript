@@ -13,6 +13,10 @@
 		}
 	],
 	"suffix": ".res.js",
-	"bs-dependencies": ["@rescript/core"],
+	"jsx": {
+		"version": 4,
+		"mode": "automatic"
+	},
+	"bs-dependencies": ["@rescript/core", "@rescript/react"],
 	"bsc-flags": ["-open RescriptCore"]
 }

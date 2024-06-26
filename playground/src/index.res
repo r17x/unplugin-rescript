@@ -1,2 +1,10 @@
-let add = (a, b) => a + b
-let _ = Js.log(add(1, 2))
+ReactDOM.querySelector("#app")
+->Option.getExn
+->ReactDOM.Client.createRoot
+->ReactDOM.Client.Root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+
+Js.log("Welcome to unplugin-rescript")

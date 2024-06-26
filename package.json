@@ -103,7 +103,7 @@
     "prepare": "husky install",
     "build": "tsup",
     "dev": "tsup --watch src",
-    "lint": "biome lint ./src && biome format ./src",
+    "lint": "biome ci .",
     "lint:fix": "biome lint --fix && biome format --write",
     "build:fix": "esno scripts/postbuild.ts",
     "play": "npm -C playground run dev",
