@@ -1,7 +1,7 @@
 {
   "name": "unplugin-rescript",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.6.12",
   "description": "a plugin for integration ReScript with most Bundler (Vite, Rollup, Webpack, Esbuild, etc).",
   "license": "MIT",
@@ -26,7 +26,6 @@
   ],
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-      "biome check --files-ignore-unknown=true",
       "biome check --write --no-errors-on-unmatched",
       "biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
       "biome check --write --unsafe --no-errors-on-unmatched",
