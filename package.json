@@ -104,7 +104,7 @@
     "build": "tsup",
     "dev": "tsup --watch src",
     "lint": "biome lint ./src && biome format ./src",
-    "lint:fix": "biome lint ./src --fix && biome format ./src --write",
+    "lint:fix": "biome lint --fix && biome format --write",
     "build:fix": "esno scripts/postbuild.ts",
     "play": "npm -C playground run dev",
     "prepublishOnly": "npm run build",
@@ -139,10 +139,12 @@
   },
   "dependencies": {
     "npm-run-path": "^5.3.0",
+    "picocolors": "^1.0.1",
     "unplugin": "1.10.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.2",
+    "@rollup/pluginutils": "^5.1.0",
     "@types/node": "^20.10.3",
     "astro": "^4.11.1",
     "bumpp": "^9.2.0",

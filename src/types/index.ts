@@ -1,5 +1,19 @@
+import type * as ReScriptV11 from "./rescript-v11";
+
 export type Options = {
-	sources?: string | string[];
+	command?: {
+		build?: string;
+	};
+	cwd: string;
+	rescriptConfig: string;
+};
+
+export type ContextOptions = Options & {
+	cwd: string;
+	compilerOptions: ReScriptV11.ReScriptBuildConfiguration & { suffix: string };
+	command: {
+		build: string;
+	};
 };
 
 export * as ReScriptV11 from "./rescript-v11";

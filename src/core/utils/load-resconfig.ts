@@ -25,7 +25,7 @@ const resolveResConfigFromFile = (cwd: string, filename: string) => {
 	return findUp(filename, cwd);
 };
 
-const __loadResConfig = (dir = process.cwd(), name = "resconfig.json") => {
+const __loadResConfig = (dir = process.cwd(), name = "rescript.json") => {
 	const id = resolveResConfigFromFile(path.resolve(dir), name);
 	if (!id) return null;
 	return JSON.parse(fs.readFileSync(id, "utf8"));
