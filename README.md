@@ -42,7 +42,7 @@ import ReScript from 'unplugin-rescript/vite'
 
 export default defineConfig({
   plugins: [
-    ReScript({ /* options */ }),
+    ReScript(),
   ],
 })
 ```
@@ -57,7 +57,7 @@ import ReScript from 'unplugin-rescript/farm'
 
 export default defineconfig({
   plugins: [
-    ReScript({ /* options */ }),
+    ReScript(),
   ],
 })
 ```
@@ -71,7 +71,7 @@ export default defineconfig({
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-rescript/rspack')({ /* options */ })
+    require('unplugin-rescript/rspack')()
   ]
 }
 ```
@@ -87,7 +87,7 @@ import ReScript from 'unplugin-rescript/rollup'
 
 export default {
   plugins: [
-    ReScript({ /* options */ }),
+    ReScript(),
   ],
 }
 ```
@@ -103,7 +103,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-rescript/webpack')({ /* options */ })
+    require('unplugin-rescript/webpack')()
   ]
 }
 ```
