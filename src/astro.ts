@@ -1,5 +1,5 @@
-import type { Options } from "./types";
 import type { AstroIntegration } from "astro";
+import type { Options } from "./types";
 import ResScriptVite from "./vite";
 
 export default function (options: Options): AstroIntegration {

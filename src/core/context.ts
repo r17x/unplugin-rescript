@@ -1,11 +1,11 @@
-import type { Options, ContextOptions } from "../types";
-import * as utils from "./utils";
-import colors from "picocolors";
 import path from "path";
+import type { ContextOptions, Options } from "@/types";
+import colors from "picocolors";
+import * as utils from "./utils";
 
-import { npmRunPathEnv } from "npm-run-path";
-import { promisify } from "util";
 import { exec } from "child_process";
+import { promisify } from "util";
+import { npmRunPathEnv } from "npm-run-path";
 
 class Context {
 	options: ContextOptions;

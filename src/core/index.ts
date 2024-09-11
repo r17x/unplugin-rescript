@@ -1,5 +1,5 @@
+import type { Options } from "@/types";
 import type { UnpluginFactory } from "unplugin";
-import type { Options } from "../types";
 import { Context } from "./context";
 
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (
