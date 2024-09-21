@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>unplugin-rescript</h1>
+    <h1><a href="https://github.com/r17x/js/tree/main/packages/unplugin-rescript#readme">[MOVE HERE]unplugin-rescript</a></h1>
     <p>
         a plugin for integration <a href="https://rescript-lang.org/"><b>ReScript</b></a> with most Bundler (Vite, Rollup, Webpack, Esbuild, etc).
     </p>
